@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Kazuki Yasufuku">
+
+    <meta name="keywords" content="html, css, javascript">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: solid;
+        }
+    </style>
+    <title>創作部TRPG班活動内容についての紹介</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="top">創作部TRPG班活動内容についての紹介</h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">タグリファレンス</a></li>
+                    <li><a href="#">問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>この表はTRPG班の参加状況です</h2>
+                <div>
+                    <h3>あくまでも個人情報なので，本名は伏せています．</h3>
+                    <div>
+                        <table><!-- 表を表示するタグ, -->
+                            <caption>シナリオ参加率</caption><!-- 表の説明 -->
+                            <thead><!-- thead:ヘッダーにあたる行を格納する -->
+                                <tr><!-- tr:行を表す -->
+                                    <th>・</th><!-- th:ヘッダーに対応するセル ，ここは０列目-->
+                                    <th>近くて遠きは終着点</th>
+                                    <th>毒入りスープ</th>
+                                    <th>カタシロ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>YK君</th>
+                                    <!-- td:通常のセル -->
+                                    <td>○</td>
+                                    <td>✕</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <th>FR君</th>
+                                    <!-- td:通常のセル -->
+                                    <td>○</td>
+                                    <td>✕</td>
+                                    <td>○</td>
+                                </tr>
+                                <tr>
+                                    <th>YSｻﾝ</th>
+                                    <!-- td:通常のセル -->
+                                    <td>✕</td>
+                                    <td>✕</td>
+                                    <td>○</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>○の数</th>
+                                    <th>2</th>
+                                    <th>0</th>
+                                    <th>3</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <h4>シナリオ参加率を見やすいように列を結合した表</h4>
+                    <table><!-- 表を表示するタグ, -->
+                        <tr><!-- tr:行を表す -->
+                            <th>・</th><!-- th:ヘッダーに対応するセル ，ここは０列目-->
+                            <th>近くて遠きは終着点</th>
+                            <th>毒入りスープ</th>
+                            <th>カタシロ</th>
+                        </tr>
+                        <tr>
+                            <th>YK君</th>
+                            <!-- td:通常のセル -->
+                            <td rowspan="2">○</td>
+                            <td rowspan="3">✕</td>
+                            <td rowspan="3">○</td>
+                        </tr>
+                        <tr>
+                            <th>FR君</th>
+                            <!-- td:通常のセル -->
+                            <!-- <td>2-1</td> -->
+                            <!-- <td>2-2</td> -->
+                            <!-- <td>2-3</td> -->
+                        </tr>
+                        <tr>
+                            <th>YSｻﾝ</th>
+                            <!-- td:通常のセル -->
+                            <td>✕</td>
+                            <!-- <td>3-2</td> -->
+                            <!-- <td>3-3</td> -->
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3>回したシナリオを箇条書きにしました！</h3>
+                    <div>
+                        <h4>2024年春学期に回したシナリオ</h4>
+                        <ol>
+                            <li>カタシロ</li>
+                            <li>キルキルイキル</li>
+                            <li>近くて遠きは終着点</li>
+                            <li>この歌の示す先は？</li>
+                            <li>桜色の泡沫</li>
+                            <li>毒入りスープ</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h4>これから回したいシナリオ</h4>
+                        <ul>
+                            <!-- ul 順序なしリスト -->
+                            <!-- li：箇条書きの項目 -->
+                            <li>鰯と柊</li>
+                            <li>テンペスト</li>
+                            <li>沼男は誰だ</li>
+                            <li>先生_ソロシナリオ</li>
+                            <li>ソープスクール</li>
+                            <li>花冷えに亡く季節</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>余談．．．個人的にどうでもいいポケモン事情(感想)</h4>
+                        <dl>
+                            <dt>ポケモンBW</dt>
+                            <dd>・ブラック＆ホワイトと読む．俺達の思い出．さっさとリメイク来い！！</dd>
+                            <dd>・ホワイト買ったらゼクロムとか騙されたわwww</dd>
+                            <dd>・バスラオLv.100で殿堂入りしました！．ツタージャが一番かわいい</dd>
+                            <dt>ポケモンXY</dt>
+                            <dd>・ここから，服を購入したりのカスタマイズが始まった．(ファッション全部手に入れたわ)</dd>
+                            <dt>ポケモンサンムーン</dt>
+                            <dd>嫌い</dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <h4>BW映画の思い出</h4>
+                        <ul>
+                            <li>ブラック
+                                <ul>
+                                    <li>色違いサザンドラ
+                                        <ul>
+                                            →かっこいい
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>ホワイト
+                                <ul>
+                                    <li>色違いゴルーグ
+                                        <ul>
+                                            →いらない
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section>
+                <h2>TRPG班の活動について</h2>
+                <div>
+                    <ul>
+                        <li><a href="../kadai2/b.html">そもそもTRPGって？(同タブ)</a></li>
+                        <li><a href="../kadai2/index.html">創作部TRPG班紹介</a></li>
+                    </ul>
+                </div>
+                <h2>入部フォーム</h2>
+                <form method="post">
+                    <!-- 1行のテキスト入力フィールド -->
+                    <div>
+                        <!-- 入力フィールドの説明 for属性にはinputタグのid属性値を指定する-->
+                        <label for="surname">姓：</label>
+                        <!-- name属性はサーバーサイドでデータ取得時に利用する -->
+                        <input type="text" name="lastname" id="surname" placeholder="ここには名字をいれてね！" value="">
+
+                        <label for="firstname">名：</label>
+                        <input type="text" name="firstname" id="firstname" required value="">
+                    </div>
+
+                    <!-- パスワード入力フィールド -->
+                    <div>
+                        <label for="password">パスワード：</label>
+                        <input type="password" name="password" id="password" value="">
+                    </div>
+
+                    <!-- チェックボックス -->
+                    <!-- サーバーに送信したい値はvalue値で指定 -->
+                    <div>
+                        <input type="checkbox" name="agreement" id="agreement" value="true">
+                        <label for="agreement">プライバシーポリシーに同意する</label>
+                    </div>
+
+                    <!-- ラジオボタン -->
+                    <!-- グループ化したい選択肢に共通のname属性値を指定する -->
+                    <!-- サーバに送信したい値はvalue属性で指定する -->
+                    <div>
+                        <input type="radio" name="sex" id="female" value="female" checked>
+                        <label for="female">女性</label>
+
+                        <input type="radio" name="sex" id="male" value="male">
+                        <label for="male">男性</label>
+
+                        <input type="radio" name="sex" id="other" value="other">
+                        <label for="other">その他</label>
+                        
+                        <input type="radio" name="sex" id="none" value="none">
+                        <label for="none">選択しない</label>
+                    </div>
+
+                    <!-- 複数行のテキストフィールド -->
+                    <div>
+                        <label for="remarks">問い合わせ内容：</label>
+                        <textarea name="remarks" id="remarks" cols="30" rows="10" accesskey="r" tabindex="1">ここに問い合わせ内容を入力してください</textarea>
+                    </div>
+
+                    <!-- メールアドレス -->
+                    <div>
+                        <label for="email">メールアドレス：</label>
+                        <input type="email" name="email" id="email" value="">
+                    </div>
+
+                    <!-- 日付関連 -->
+                    <div>
+                        <label for="birthday">誕生日：</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>
+
+                    <div>
+                        <label for="time">時間：</label>
+                        <input type="time" name="time" id="time">
+                    </div>
+
+                    <div>
+                        <label for="datetime">日時：</label>
+                        <input type="datetime-local" name="datetime" id="datetime">
+                    </div>
+
+                    <!-- 色 -->
+                    <div>
+                        <label for="favorite-color">好きな色：</label>
+                        <input type="color" name="favorite-color" id="favorite-color" value="">
+                    </div>
+
+                    <!-- 電話番号 -->
+                    <div>
+                        <label for="tel">電話番号：</label>
+                        <input type="tel" name="tel" id="tel" value="">
+                    </div>
+
+                    <!-- ファイルアップロード -->
+                    <div>
+                        <p>好きな写真をアップロードしていいですよ！</p>
+                        <label for="upload-file">アップロードファイル：</label>
+                        <input type="file" name="upload-file" id="upload-file">
+                    </div>
+
+                    <div>
+                        <label for="range">範囲：</label>
+                        <input type="range" name="range" id="range">
+                    </div>
+
+                    <div>
+                        <label for="url">URL：</label>
+                        <input type="url" name="url" id="url" value="">
+                    </div>
+
+                    <!-- フォームデータを送信するボタン -->
+                    <div>
+                        <input type="submit" value="送信する">
+                        <input type="reset" value="リセット">
+                    </div>
+                </form>
+            </section>
+        </aside>
+        <footer>
+            Copyright &copy; Kazuki Yasufuku, All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
