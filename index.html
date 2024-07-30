@@ -1,28 +1,18 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 
 <head>
-    <!-- ファイルの文字コード -->
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ページ作成者 -->
     <meta name="author" content="Kazuki Yasufuku">
-    <!-- ページ内容を表すキーワード（3〜5つくらい） -->
     <meta name="keywords" content="img, audio, video">
-
     <link rel="stylesheet" href="./css/main.css">
-
-    <!-- タイトル -->
     <title>創作部TRPG紹介動画</title>
 </head>
 
 <body>
     <div class="container">
-        <!-- header: サイト共通のヘッダー情報（サイトタイトルとかナビゲーションとか） -->
         <header>
             <h1 id="top">創作部TRPG班活動紹介</h1>
             <nav id="menu">
@@ -39,191 +29,63 @@
                 <h2 class="green">このページはミ=ゴの提供でお送りいたします</h2>
                 <a href="#hogehoge">何か見えるね！押してみよう‼️</a>
             </section>
+
+            <h3>メールが1件届いています</h3>
+            <p class="pink">読み進めて下さい</p>
+            <div id="extra-content"></div> <!-- コンテンツを挿入するための空の<div> -->
+
+            <img src="../kadai1/media1/ori_gomi.png" width="1000" height="1000" alt="migoの画像">
+            <p id="hogehoge">SAN値チェック！！</p>
+    
+            <label for="diceType">サイコロの種類を選択:</label>
+            <select id="diceType" tabindex="1">
+                <option value="2">1d2</option>
+                <option value="3">1d3</option>
+                <option value="6">1d6</option>
+                <option value="10">1d10</option>
+                <option value="20">1d20</option>
+                <option value="100" selected>1d100</option>
+            </select>
+            
+            <button onclick="rollDice()" tabindex="2" accesskey="r">サイコロを振る</button>
+            
+            <p id="dice-result">サイコロの結果がここに表示されます。</p> <!-- サイコロの結果を表示するための<p> -->
+
+            <section>
+                <h2>ミ=ゴとじゃんけんもできるよ！</h2>
+                <button type="button" onclick="playJanken('グー')" tabindex="3" accesskey="g">グー</button>
+                <button type="button" onclick="playJanken('チョキ')" tabindex="4" accesskey="c">チョキ</button>
+                <button type="button" onclick="playJanken('パー')" tabindex="5" accesskey="p">パー</button>
+                <p id="janken-result">じゃんけんの結果がここに表示されます。</p> <!-- じゃんけんの結果を表示するための<p> -->
+            </section>
         </main>
+
         <aside>
             <div>
                 <h2>サイドバー</h2>
                 <div>
                     <h3>外部リンク</h3>
-                        <h4>こちらは創価大学の公式ホームページになります↓</h4>
-                        <a href="https://www.soka.ac.jp/" target="_blank">創価大学HPへのリンク（別タブ）</a>
-                        <!-- 別タブでリンクを開く -->
-                        <h4>こちらは創価大学創作部の公式ホームページになります↓</h4>
-                        <a href="http://soukadaigakusousakubu.web.fc2.com" target="_blank">創作部全体HPへのリンク（別タブ）</a>
-
+                    <h4>こちらは創価大学の公式ホームページになります↓</h4>
+                    <a href="https://www.soka.ac.jp/" target="_blank">創価大学HPへのリンク（別タブ）</a>
+                    <h4>こちらは創価大学創作部の公式ホームページになります↓</h4>
+                    <a href="http://soukadaigakusousakubu.web.fc2.com" target="_blank">創作部全体HPへのリンク（別タブ）</a>
                     <h3>TRPG班の活動について</h3>
-
                     <ul>
-                        <li><a href="../kadai2/b.html">そもそもTRPGって？(同タブ)</a></li>
-                        <li><a href="../kadai2/a.html">TRPG班の活動内容についての紹介(同タブ)</a></li>
+                        <li><a href="../kadai_last/b.html">そもそもTRPGって？(同タブ)(b)</a></li>
+                        <li><a href="../kadai_last/a.html">TRPG班の活動内容についての紹介(同タブ)(a)</a></li>
                     </ul>
-
-                    <h3>メールが1件届いています</h3>
-                    <p class="pink">読み進めて下さい</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-                    <p>」</p>
-
-                    <!-- ページを縦長にするための要素 -->
-                    <img src="../kadai1/media1/ori_gomi.png" width="1000" height="1000" alt="migoの画像">
-                    <!-- id属性で要素に名前を付ける -->
-                    <p id="hogehoge">SAN値チェック！！</p>
                 </div>
             </div>
         </aside>
     </div>
 
-    <!-- <a href="#top"><p>トップに戻る</p></a> -->
-    <a href="#top"><span>トップに戻る</span></a>
+    <!-- jQueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQueryアニメーションのスクリプト -->
+    <script src="./js/jquery_test.js"></script>
+    <!-- メインのJavaScriptスクリプト -->
+    <script src="./js/main.js"></script>
 
+    <a href="#top"><span>トップに戻る</span></a>
 </body>
 </html>
